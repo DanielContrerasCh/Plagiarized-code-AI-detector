@@ -1,0 +1,32 @@
+# ===== Artefactos pesados de modelos =====
+# GitHub rechaza archivos > 100 MB. El RandomForest serializado pesa ~360 MB,
+# por eso se mantiene LOCAL (para que la celda CARGAR funcione sin reentrenar)
+# pero NO se versiona en git.
+artefactos_reto/
+*.joblib
+# Excepcion: el bundle ligero (~1 MB, solo XGBoost + preprocesadores)
+# SI se versiona para poder probar el modelo sin reentrenar.
+!modelo_reto.joblib
+*.npy
+*.pkl
+*.pt
+*.safetensors
+
+
+
+# ===== Datos y credenciales =====
+*.parquet
+kaggle.json
+.cache/
+reto_data/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
