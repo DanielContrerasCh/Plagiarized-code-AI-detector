@@ -17,10 +17,8 @@ Reto en equipo del bloque de compiladores: **detección de plagio en código med
 
 1. Clonar el repo y abrir `RetoPlagio.ipynb`.
 2. Correr la CELDA 1 (imports), la celda CARGAR (11), la CELDA 15 y la celda de PRUEBAS (16).
-3. (Opcional) Correr la CELDA 12 para descargar el Random Forest ya entrenado (~376 MB, desde el Release del repo) y probar con los dos modelos.
+3. Correr la CELDA 12 para descargar el Random Forest ya entrenado (~376 MB, desde el Release del repo) y probar con los dos modelos.
 4. Pegar cualquier fragmento de código en el diccionario `pruebas` para clasificarlo como humano o generado por IA, con su probabilidad.
-
-El entrenamiento completo (~500k fragmentos, requiere credenciales de Kaggle) solo es necesario para reproducir los resultados desde cero.
 
 ## Resultados (macro F1, validación oficial)
 
